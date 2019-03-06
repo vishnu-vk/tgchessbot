@@ -14,23 +14,22 @@ class tgchessBot(telepot.Bot):
         self.startsheet, self.helpsheet = self.generate_sheets()
 
     def generate_sheets(self):
-        startsheet = "Hello! This is the Telegram Chess Bot @tgchessbot. \U0001F601\n"
+        startsheet = "Hello! This is the Telegram Chess Bot @MasterofChess_bot. \U0001F601\n"
         startsheet += "For the full command list, type `/help`.\n"
-        startsheet += "(You may want to use `/help@tgchessbot` instead if there are multiple bots in your chat.)\n\n"
+        startsheet += "(You may want to use `/help@MasterofChess_bot` instead if there are multiple bots in your chat.)\n\n"
         startsheet += "*About*\n\n"
-        startsheet += "You can play chess using @tgchessbot. To play with friends, create a group and invite @tgchessbot into it. If you wish to play alone, talk to @tgchessbot on a 1-on-1 private message.\n\n"
+        startsheet += "You can play chess using @MasterofChess_bot. To play with friends, create a group and invite @MasterofChess_bot into it. If you wish to play alone, talk to @MasterofChess_bot on a 1-on-1 private message.\n\n"
         startsheet += "_How to play_: Someone creates a game and picks a colour (white or black). Someone else (could be the same person) joins and is automatically assigned the other side.\n\n"
-        startsheet += "_Make your best move_: Make a move by typing `/move <your move>` or just `<your move>`. @tgchessbot is able to recognise both SAN and UCI notations. E.g. `/move e4` or `/move e2e4`, `/move Nf3` or `g1f3`\n\n"
+        startsheet += "_Make your best move_: Make a move by typing `/move <your move>` or just `<your move>`. @MasterofChess_bot is able to recognise both SAN and UCI notations. E.g. `/move e4` or `/move e2e4`, `/move Nf3` or `g1f3`\n\n"
         startsheet += "Every chat conversation is capped to have only 1 match going on at any point in time to avoid confusion (In case multiple people try to play matches simultaneously in the same group chat). For a more enjoyable experience, you may wish to create a group chat with 3 members: You, your friend/opponent and @tgchessbot\n\n"
         startsheet += "*Inline Commands*\n\n"
-        startsheet += "You may also make use of inline commands by typing `@tgchessbot <command>`.\n"
-        startsheet += "Currently available commands: `@tgchessbot /start`, `@tgchessbot /help`, `@tgchessbot /stats`.\n\n"
-        startsheet += "`@tgchessbot /stats` displays how many wins, draws and losses you accumulated across all games you have played via @tgchessbot. If user base grows sufficiently large, we intend to incorporate a global ELO rating system.\n\n"
+        startsheet += "You may also make use of inline commands by typing `@MasterofChess_bot <command>`.\n"
+        startsheet += "Currently available commands: `@MasterofChess_bot /start`, `@MasterofChess_bot /help`, `@MasterofChess_bot /stats`.\n\n"
+        startsheet += "`@MasterofChess_bot /stats` displays how many wins, draws and losses you accumulated across all games you have played via @MasterofChess_bot. If user base grows sufficiently large, we intend to incorporate a global ELO rating system.\n\n"
         startsheet += "At the moment, we are unable to support inline commands to play your matches unfortunately.\n\n"
         startsheet += "*Contact*\n\n"
         startsheet += "This bot is built with the help of [`telepot`](https://github.com/nickoala/telepot), [`python-chess`](https://github.com/niklasf/python-chess) and [`Pillow`](https://pillow.readthedocs.io/en/3.2.x/), with chess piece images from [Cburnett](https://en.wikipedia.org/wiki/User:Cburnett) on [Wikipedia](https://en.wikipedia.org/wiki/Chess_piece).\n\n"
-        startsheet += "For more information, visit https://github.com/cxjdavin/tgchessbot/\n"
-        startsheet += "Contact me at `tgchessbot@gmail.com` for bug reports, etc."
+
 
         helpsheet = "Allowed commands:\n"
         helpsheet += "`/help`: Display help sheet\n"
@@ -293,7 +292,7 @@ class tgchessBot(telepot.Bot):
 ############
 # AUTO RUN #
 ############
-telegram_bot_token = "<REMOVED>"
+telegram_bot_token = "720971111:AAF71DqgQbb4syxWZ4W1qsgrhSoLO9yXqoM"
 bot = tgchessBot(telegram_bot_token)
 
 # For persistence
